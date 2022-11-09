@@ -1,0 +1,64 @@
+.home__guide {
+  margin: 50px 0;
+
+  ul {
+    font-weight: 500;
+
+    li {
+      padding: 20px 35px;
+      background-color: $tertiary-bg;
+      margin: 20px 10px;
+      border-radius: 14px;
+      box-shadow: $shadow;
+
+      .guide__icon::before {
+        margin-right: 20px;
+        color: $icon-color;
+      }
+
+      .guide__choose::before{
+        font-family: $font-awesome;
+        content:"\f3cd";
+        font-weight: 600;
+      }
+
+      .guide__compose::before{
+        font-family: $font-awesome;
+        content:"\f0ca";
+        font-weight: 600;
+      }
+
+      .guide__taste::before{
+        font-family: $font-awesome;
+        content:"\f54e";
+        font-weight: 600;
+      }
+    }
+
+    li::before {
+      content: '';
+      display: inline-block;
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      line-height: 20px;
+      text-align: center;
+      border-radius: 50%;
+      background-color: $primary-color;
+      left: 20px;
+      color: white;
+      font-weight: 400;
+      font-size: 12px;
+    }
+
+    .li-first::before {
+      content: '1';
+    }
+    .li-second::before {
+      content: '2';
+    }
+    .li-third::before {
+      content: '3';
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "name": "hamard_antoine_1_code_102022",
+  "version": "1.0.0",
+  "description": "Projet 3 - ohmyfood",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./public/css/style.css --style compressed"
+  },
+  "author": "Antoine Hamard",
+  "license": "ISC"
+}

@@ -1,0 +1,28 @@
+footer {
+  color: white;
+  background-color: $primary-bg;
+  padding-top: 20px;
+  padding-bottom: 30px;
+
+  img {
+    width: 120px;
+  }
+
+  li {
+    margin: 10px 0;
+  }
+
+  .footer__restaurant__icon::before {
+    content: "\f2e7";
+    font-family: $font-awesome;
+    font-weight: 600;
+    margin-right: 10px;
+  }
+  .footer__partner__icon::before {
+    content: "\f4c4";
+    font-family: $font-awesome;
+    font-weight: 600;
+    font-size: 12px;
+    margin-right: 10px;
+  }
+}
