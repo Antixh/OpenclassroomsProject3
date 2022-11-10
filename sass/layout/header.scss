@@ -3,6 +3,11 @@ header {
   display: flex;
   flex-direction: column;
 
+  .headerimgwrapper {
+    box-shadow: $shadow;
+    z-index: 2;
+  }
+
   img {
     display: block;
     width: 160px;
@@ -23,6 +28,19 @@ header {
       margin-right: 10px;
       color: $primary-font;
     }
+  }
+}
+
+.header__restaurant {
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+
+  .backhome {
+    position: absolute;
+    left: 20px;
+    top: 30px;
   }
 }
 
