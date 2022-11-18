@@ -1,8 +1,22 @@
 h1 {
-  font-family: "Roboto";
+  font-family: $text-font;
   font-size: x-large;
+}
+
+.restaurant__title {
+  font-family: $title-font;
+  font-size: 26px;
+  font-weight: 300;
 }
 
 body {
   font-family: $text-font;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:visited, a:link {
+  color: unset;
 }
