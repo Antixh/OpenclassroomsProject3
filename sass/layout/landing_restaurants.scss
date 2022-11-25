@@ -55,6 +55,20 @@
   }
 }
 
+.restaurant__home__image::before {
+  content: "Nouveau";
+  color: $sticker-text-color;
+  background-color: $tertiary-color;
+  position: absolute;
+  right: 35px;
+  transform: translateY(15px);
+  z-index: 2;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
 @media (min-width: $desktop){
   .restaurants__list {
     display: flex;
@@ -65,5 +79,10 @@
 
   .restaurant__card {
     width: 575px;
+  }
+
+  .restaurant__home__image::before{
+    transform: translate3d(475px, 15px, 0px);
+    right: unset;
   }
 }
