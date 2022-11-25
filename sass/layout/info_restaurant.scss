@@ -77,3 +77,16 @@
     }
   }
 }
+
+@media (min-width: $desktop){
+  .restaurant__info__card{
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .restaurant__menu__block{
+    .restaurant__menu__card{
+      margin-bottom: 25px;
+    }
+  }
+}
