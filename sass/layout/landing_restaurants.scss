@@ -54,3 +54,16 @@
     }
   }
 }
+
+@media (min-width: $desktop){
+  .restaurants__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 50px;
+  }
+
+  .restaurant__card {
+    width: 575px;
+  }
+}
