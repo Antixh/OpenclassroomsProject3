@@ -34,15 +34,15 @@
     font-weight: 300;
     font-size: 18px;
     position: relative;
-  }
 
-  h2::after {
-    content: '';
-    width: 45px;
-    border-bottom: 2px solid $tertiary-color;
-    position: absolute;
-    top: 22px;
-    left: 0;
+    &::after{
+      content: '';
+      width: 45px;
+      border-bottom: 2px solid $tertiary-color;
+      position: absolute;
+      top: 22px;
+      left: 0;
+    }
   }
 
   .restaurant__menu__card {
@@ -60,14 +60,18 @@
       flex-direction: column;
       overflow: hidden;
       white-space: nowrap;
-      text-overflow: ellipsis;
+
+      h3, p {
+        text-overflow: ellipsis;
+        overflow: hidden;
+      }
 
       h3 {
         margin: 0 0 5px 0;
       }
 
       p {
-        margin: 0 0 0 0;
+        margin: 0;
       }
     }
 
