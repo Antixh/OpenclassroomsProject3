@@ -11,9 +11,17 @@
       border-radius: 14px;
       box-shadow: $shadow;
 
+      &:hover {
+        background-color: $hover-bg;
+      }
+
       .guide__icon::before {
         margin-right: 20px;
         color: $icon-color;
+      }
+
+      &:hover .guide__icon::before {
+        color: $primary-color;
       }
 
       .guide__choose::before{
