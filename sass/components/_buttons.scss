@@ -9,4 +9,23 @@ button {
   color: white;
   background: linear-gradient($secondary-color, $primary-color);
   box-shadow: $shadow;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.like__container .fa-solid {
+  display: none;
+  background: linear-gradient($primary-color, $secondary-color);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.like__container:hover .fa-solid{
+  display: block;
+}
+
+.like__container:hover .fa-regular {
+  display: none;
 }

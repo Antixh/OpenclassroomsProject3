@@ -13,6 +13,11 @@
     border-bottom-right-radius: 15px;
     box-shadow: $shadow;
     margin-bottom: 20px;
+    transition: transform 0.1s ease-in;
+
+    &:hover {
+      transform: scale(1.01);
+    }
 
     img {
       width: 100%;
@@ -43,12 +48,14 @@
         span {
           font-size: medium;
         }
+      }
 
-        
+      .like__container {
+        margin: 20px;
       }
 
       .icon_like {
-        padding: 20px;
+        padding: 2px;
         font-size: x-large;
       }
     }

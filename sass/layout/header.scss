@@ -4,6 +4,8 @@ header {
   flex-direction: column;
 
   .headerimgwrapper {
+    height: 55px;
+    padding: 10px 0;
     box-shadow: $shadow;
     z-index: 2;
   }
@@ -32,6 +34,7 @@ header {
 }
 
 .header__restaurant {
+  height: 55px;
   flex-direction: row;
   align-items: center;
   justify-content: center;
