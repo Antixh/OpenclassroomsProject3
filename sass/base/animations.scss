@@ -1,13 +1,13 @@
 .loader {
   width: 100%;
   height: 100%;
-  position: absolute;
+  position: fixed;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 5px;
   background-color: $secondary-bg;
-  animation: loading 2.5s ease-in;
+  animation: loading 2s ease-in;
   opacity: 0;
   visibility: hidden;
   z-index: 3;
@@ -26,6 +26,27 @@
   }
 }
 
+.restaurant__menu__card {
+  animation: fadein-menu 1.2s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+.delay-0{
+  animation-delay: 0s;
+}
+
+.delay-1{
+  animation-delay: 0.2s;
+}
+
+.delay-2{
+  animation-delay: 0.4s;
+}
+
+.delay-3 {
+  animation-delay: 0.6s;
+}
 
 /* ANIMATION */
 
@@ -64,5 +85,16 @@
   
   100% {
     transform: translateY(0%);
+  }
+}
+
+@keyframes fadein-menu {
+  0% {
+    transform: translateY(20px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
