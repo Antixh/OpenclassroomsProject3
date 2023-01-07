@@ -7,7 +7,7 @@
   align-items: center;
   gap: 5px;
   background-color: $secondary-bg;
-  animation: loading 1.5s ease-in;
+  animation: loading 2.5s ease-in;
   opacity: 0;
   visibility: hidden;
   z-index: 3;
@@ -16,18 +16,23 @@
     width: 14px;
     height: 14px;
     border-radius: 10px;
-    background-color: $tertiary-color;
-    animation: animation-loading 1.6s ease-in-out;
+    background-color: $secondary-color;
+    animation: animation-loading 1.8s ease-in-out;
 
-    &:first-child, &:last-child {
-      animation-delay: 200ms;
+    &:first-child {
+      animation-delay: -100ms;
+      background-color: $tertiary-color;
+    }
+
+    &:last-child {
+      animation-delay: 100ms;
       background-color: $primary-color;
     }
   }
 }
 
 .restaurant__menu__card {
-  animation: fadein-menu 1.2s;
+  animation: fadein-menu 1.4s;
   animation-fill-mode: forwards;
   opacity: 0;
 }
@@ -68,23 +73,23 @@
 
 @keyframes animation-loading {
   0% {
-    transform: translateY(0%);
+    transform: translateY(0);
   }
   
   25% {
-    transform: translateY(100%);
+    transform: translateY(-35px);
   }
   
   50% {
-    transform: translateY(0%);
+    transform: translateY(0);
   }
   
   75% {
-    transform: translateY(30%);
+    transform: translateY(-25px);
   }
   
   100% {
-    transform: translateY(0%);
+    transform: translateY(0);
   }
 }
 
