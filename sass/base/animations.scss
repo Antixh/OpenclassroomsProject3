@@ -7,7 +7,7 @@
   align-items: center;
   gap: 5px;
   background-color: $secondary-bg;
-  animation: loading 2s ease-in;
+  animation: loading 1.5s ease-in;
   opacity: 0;
   visibility: hidden;
   z-index: 3;
@@ -48,7 +48,7 @@
   animation-delay: 0.6s;
 }
 
-/* ANIMATION */
+/* Keyframes */
 
 @keyframes loading {
   0% {
