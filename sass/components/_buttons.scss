@@ -9,11 +9,12 @@ button {
   color: white;
   background: linear-gradient($secondary-color, $primary-color);
   box-shadow: $shadow;
+  transition: all 0.2s ease;
 
   &:hover {
     cursor: pointer;
     box-shadow: $shadow-focus;
-    opacity: 0.95;
+    opacity: 0.9;
   }
 }
 

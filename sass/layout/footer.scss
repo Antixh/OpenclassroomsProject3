@@ -10,6 +10,11 @@ footer {
 
   li {
     margin: 10px 0;
+
+    &:hover {
+      color: $tertiary-color;
+      cursor: pointer;
+    }
   }
 
   .footer__restaurant__icon::before {
@@ -24,5 +29,23 @@ footer {
     font-weight: 600;
     font-size: 12px;
     margin-right: 10px;
+  }
+}
+
+@media (min-width: $desktop) {
+  footer {
+    padding-bottom: 10px;
+
+    img {
+      display: block;
+      margin: auto;
+    }
+
+    ul {
+      max-width: 800px;
+      margin: 15px auto 0;
+      display: flex;
+      justify-content: space-between;
+    }
   }
 }
