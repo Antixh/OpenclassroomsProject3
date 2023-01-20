@@ -61,7 +61,7 @@
       margin-right: -10px;
 
       .fa-circle-check {
-        transform: rotate(0);
+        transform: rotate(360deg);
       }
     }
 
@@ -81,7 +81,7 @@
       margin-right: -70px;
 
       .fa-circle-check {
-        transform: rotate(180deg);
+        transform: rotate(0);
         transition: transform ease 0.5s;
       }
     }
